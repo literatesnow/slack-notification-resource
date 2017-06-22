@@ -1,6 +1,6 @@
 FROM alpine:3.3
 
-RUN apk --no-cache --update add curl bash jq
+RUN apk --no-cache --update add curl bash jq gettext-dev
 
 COPY check /opt/resource/check
 COPY in    /opt/resource/in
